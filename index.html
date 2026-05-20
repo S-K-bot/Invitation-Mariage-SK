@@ -212,12 +212,12 @@
      <img src="https://i.ibb.co/N690yZLr/face-enveloppe.jpg" alt="Illustration Cote Gammarth">
    </div>
    <div class="recipient-box">
-     <div id="recipientName" class="recipient-name-text">إلى...</div>
+     <div id="recipientName" class="recipient-name-text"> </div>
      <div class="buttons-row">
        <button class="action-btn maps-btn" id="mapsButton">
          <svg viewBox="0 0 24 24" xmlns="http://w3.org">
            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#EA4335"/>
-         </svg>Situation
+         </svg> Google Maps
        </button>
        <button class="action-btn calendar-btn" id="calendarBtn">📅 Enregistrer la date</button>
      </div>
@@ -244,7 +244,7 @@
  }
  if (guestName) {
  const decodedName = decodeURIComponent(guestName);
- recipientElement.innerText = "إلى " + decodedName.replace(/_/g, ' ');
+ recipientElement.innerText = " " + decodedName.replace(/_/g, ' ');
  }
  } catch(e) {
  console.log("Erreur d'URL");
