@@ -163,27 +163,28 @@
 .recipient-name-text {
     font-family: "Amiri", "Traditional Arabic", "Urdu Typesetting", serif !important;
     font-weight: 400 !important;
-    font-size: 6.2vw !important; /* Taille augmentée au maximum de sécurité */
+    font-size: 6.2vw !important;
     color: #10069F !important;
     direction: rtl;
     text-align: center !important;
     display: block !important;
-    margin: 0 auto !important;
+    margin: 0 auto 8px auto !important; /* Ajoute 8px de marge en bas pour pousser le bloc vers le haut de 2 mm */
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
-    max-width: 88% !important; /* Maintient le texte confiné à l'intérieur de l'enveloppe */
+    max-width: 88% !important;
     border-bottom: 1px dotted #10069F;
-    padding-bottom: 2%;
+    padding-bottom: 2px !important;
     width: 100%;
     box-sizing: border-box !important;
 }
 
 @media (min-width: 420px) {
     .recipient-name-text {
-        font-size: 25px !important; /* Taille maximale optimale sur grand écran */
+        font-size: 25px !important;
     }
 }
+
 
             }
         }
